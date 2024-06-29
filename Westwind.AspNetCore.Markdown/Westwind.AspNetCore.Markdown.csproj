@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0;</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>3.11</Version>    
+    <Authors>Rick Strahl</Authors>
+    <Company>West Wind Technologies</Company>
+    <Product>West Wind Web Toolkit</Product>
+    <Title>Westwind AspNet Core Markdown Parsing, Loading and TagHelper</Title>
+    <Description>
+This library provides Markdown support for ASP.NET Core applications:
+
+ * Markdown TagHelper - embed static markdown text from files, urls or bind model data
+ * Markdown Page Handler Middleware to render Markdown files in your site
+
+ * Markdown Parsing Support via Markdown.Parse() and Markdown.ParseHtmlString()
+ * Markdown Parsing from Files via Markdown.ParseFromFile() and .ParseFromFileAsync()
+ * Markdown Parsing from URL via Markdown.ParseFromUrl() and .ParseFromUrlAsync()
+
+ * Supports basic HTML Sanitation
+ * TagHelper supports White Space Normalization
+ * Customization of Markdown Processing Options
+
+For similar features in System.Web based classic ASP.NET apps see `Westwind.Web.Markdown`.
+    </Description>
+    <Copyright>(c) West Wind Technologies, 2017-2022</Copyright>
+    <RepositoryUrl>https://github.com/RickStrahl/Westwind.AspNetCore.Markdown</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    
+    <NoWarn>$(NoWarn);CS1591;CS1572;CS1573</NoWarn>
+    <DebugType>embedded</DebugType>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>    
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageTags>markdown aspnetcore web westwind</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicense>LICENSE.MD</PackageLicense>
+    <PackageProjectUrl>https://github.com/RickStrahl/Westwind.AspNetCore.Markdown</PackageProjectUrl>
+    <AssemblyVersion>3.11.0.1</AssemblyVersion>
+    <FileVersion>3.11.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Markdig" Version="0.31.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="" />
+    <None Include="LICENSE.MD" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>

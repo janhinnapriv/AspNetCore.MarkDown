@@ -1,0 +1,46 @@
+{
+  "WikiFolders": [
+    {
+      "Gruppe": "Dokumentasjon",
+      "Folder": "/wiki/Sertifikat Dokumentasjon/Readme",
+      "Tittel": "Sertifikatadministrasjon",
+      "Beskrivelse": "Beskrivelse av Rapporter, Lister og apper for administrasjon av sertifikater"
+    },
+    {
+      "Gruppe": "Markdown Samples",
+      "Folder": "/MarkdownTagHelper",
+      "Tittel": "Markdown Islands Sample TagHelper",
+      "Beskrivelse": "Demo Markdown"
+    },
+    {
+      "Gruppe": "Markdown Samples",
+      "Folder": "/MarkdownParsing",
+      "Tittel": "Markdown Parsing Sample Page",
+      "Beskrivelse": "Demo Markdown"
+    },
+    {
+      "Gruppe": "Markdown Page Middleware",
+      "Folder": "/posts/2018/03/23/MarkdownTagHelper",
+      "Tittel": "Markdown TagHelper Post (extensionless)",
+      "Beskrivelse": "Demo Markdown TagHelper Post (extensionless)"
+    },
+    {
+      "Gruppe": "Markdown Page Middleware",
+      "Folder": "/posts/2018/03/23/MarkdownTagHelper.md",
+      "Tittel": "Markdown TagHelper Post(.md file)",
+      "Beskrivelse": "Demo Markdown TagHelper Post(.md file)"
+    },
+    {
+      "Gruppe": "Markdown Page Middleware",
+      "Folder": "/posts/2018/03/24/CreatingAGenericMarkdownPageHandlerInAspNetCore",
+      "Tittel": "Markdown Page Handler Post (extensionless)",
+      "Beskrivelse": "Demo Markdown Page Handler Post (extensionless)"
+    },
+    {
+      "Gruppe": "Markdown Page Middleware",
+      "Folder": "/docs/ChangeLog.md",
+      "Tittel": "ChangeLog (.md file)",
+      "Beskrivelse": "Demo ChangeLog (.md file)"
+    }
+  ]
+}

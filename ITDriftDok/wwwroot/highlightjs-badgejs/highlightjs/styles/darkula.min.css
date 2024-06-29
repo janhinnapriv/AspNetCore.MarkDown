@@ -1,0 +1,12 @@
+/**
+ * Skipped minification because the original files appears to be already minified.
+ * Original file: /npm/highlightjs-badgejs@0.0.5/highlightjs/styles/darkula.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+/*
+  Deprecated due to a typo in the name and left here for compatibility purpose only.
+  Please use darcula.css instead.
+*/
+
+@import url('darcula.css');

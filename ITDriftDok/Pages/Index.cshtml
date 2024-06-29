@@ -1,0 +1,95 @@
+﻿@page "/"
+@model ITDriftDok.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@section headers
+    {
+    <style>
+        /*        @@media (max-width:600px) {
+                    .hero-text {
+                        font-size: 1.8em;
+                    }
+                }
+        */
+
+        .hero-text {
+            text-align: center;
+            line-height: 1.8em;
+            font-size: 2.7em;
+            padding: 35px 0 82px;
+            background: black;
+            color: white;
+            font-weight: 500;
+        }
+
+        .text-primary {
+            font-weight: bold !important;
+            color: khaki;
+            font-size: 1.2em;
+        }
+    </style>
+    <style type="text/css" media="screen and (max-width:960px)">
+        .hero-text {
+            font-size: 1.8em;
+        }
+    </style>
+
+}
+<div class="row">
+    <div class="col-md-12">
+        <img src="Student making notes in a cafe.png" class="rounded img-fluid mb-3" alt="...">
+    </div>
+    </div>
+<div class="row">
+    @foreach (var group in Model.Innhold.GroupBy(x => x.Gruppe))
+    {
+    <div class="col-md-6">
+        <h2>@group.Key</h2>
+        <ul>
+            @foreach(var item in group) //(int i = 0; i < gruppeList.Count(); i++)
+            {
+                <li>
+                        <a href="@item.Folder" data-toggle="tooltip" title="@item.Beskrivelse">@item.Tittel</a>
+                </li>
+            }
+        </ul>
+    </div>
+    }
+</div>
+
+@*<div class="row">
+    <div class="col-md-6">
+        <h2>Markdown Samples</h2>
+        <ul>
+            <li><a href="/MarkdownTagHelper">Markdown 'Islands' TagHelper Sample Page</a></li>
+            <li><a href="/MarkdownParsing">Markdown Parsing Sample Page</a></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2>Markdown Page Middleware</h2>
+        <ul>
+            <li><a href="/posts/2018/03/23/MarkdownTagHelper">Markdown TagHelper Post (extensionless)</a></li>
+            <li><a href="/posts/2018/03/23/MarkdownTagHelper.md">Markdown TagHelper Post(.md file)</a></li>
+
+            <li><a href="/posts/2018/03/24/CreatingAGenericMarkdownPageHandlerInAspNetCore">Markdown Page Handler Post (extensionless)</a></li>
+            <li><a href="/posts/2018/03/24/CreatingAGenericMarkdownPageHandlerInAspNetCore.md">Markdown Page Handler Post(.md file)</a></li>
+
+            <li><a href="/docs/ChangeLog">ChangeLog (extensionless)</a></li>
+            <li><a href="/docs/ChangeLog.md">ChangeLog (.md file)</a></li>
+            <li><a href="/docs/Wiki/Readme">Wiki under doc</a></li>
+            <li><a href="/wiki/Sertifikat Dokumentasjon/Readme">Wiki Sertifikat Dokumentasjon</a></li>
+            <li><a href="/wikis/Sertifikat Dokumentasjon/Readme">Sertifikat Dokumentasjon under <b>"wikis"</b></a></li>
+            <li>
+                <a href="/docs/">Default Document Processing (`/docs/` -> `/docs/index.md`)</a><br />
+                <i>
+                    <small>
+                        note: requires that DefaultDocument middleware is<br />
+                        registered <b>before</b> the Markdown middleware
+                    </small>
+                </i>
+
+            </li>
+        </ul>
+    </div>
+</div>*@
